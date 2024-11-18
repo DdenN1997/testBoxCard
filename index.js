@@ -24,6 +24,6 @@ cvvInput.addEventListener('input', () => {
 });
 
 cardholderNameInput.addEventListener('input', () => {
-  const input = cardholderNameInput.value.replace(/[^a-zA-Z]/g, '');
+  const input = cardholderNameInput.value.replace(/[^a-zA-Z\s]/g, '');
   cardholderNameInput.value = input.toUpperCase();
 });
